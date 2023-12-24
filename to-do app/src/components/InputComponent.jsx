@@ -5,6 +5,7 @@ export const InputComponent = ({ item, takeInput, addItem, allItems }) => {
   const handleChange = (e) => {
     takeInput(e.target.value);
   };
+  
 
   const addToList = () => {
     addItem([...allItems, item]);
